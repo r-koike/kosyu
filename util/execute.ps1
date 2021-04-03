@@ -48,6 +48,8 @@ $measured = Measure-Command {
 $total_milliseconds = $measured.TotalMilliseconds
 
 # 実行がうまくいったかどうかを判別する（出力の正誤は判定しない）
+if (!$omit_info) { Write-Host command: $exe_command }
+if (!$omit_info) { Receive-Job -Job $j }
 if (!$omit_info) { Write-Host Total milliseconds: $total_milliseconds }
 if (!$omit_info) { Write-Host Job state: $j.State }
 $execution_state = "Completed"
