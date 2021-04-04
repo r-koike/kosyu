@@ -42,7 +42,7 @@ $j = Start-Job {
 
 # exeの実行が終わるのを待つ
 $measured = Measure-Command {
-	# これは2秒よりも短くなることはない（たぶん）
+	# これは[$timeout_sec]秒よりも短くなることはない（たぶん）
 	Wait-Job -Job $j -Timeout $timeout_sec | Out-Null
 }
 $total_milliseconds = $measured.TotalMilliseconds
