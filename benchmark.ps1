@@ -29,7 +29,7 @@ foreach ($input_fullname in $input_fullnames) {
 			-exe_fullname $exe_fullname `
 			-input_fullname $input_fullname `
 			-omit_info `
-			-timeout_sec 5
+			-timeout_sec 15
 		Write-Host $result[0] $result[1]"[ms]"
 		if ($result[0] -ne "Completed") {
 			Write-Host "Error: Failed to execute."
