@@ -22,10 +22,10 @@ if (("" -ne $output_fullname) -and (Test-Path $output_fullname)) {
 # また，outputの受け渡しもPSのオブジェクト受け渡しは低速のため使えず，Windowsのファイルとして受け渡す
 $exe_command = ""
 if (("" -ne $input_fullname) -and ("" -ne $output_fullname)) {
-	$exe_command = "cat `"${input_fullname}`" | `"${exe_fullname}`" > `"${output_fullname}`""
+	$exe_command = "type `"${input_fullname}`" | `"${exe_fullname}`" > `"${output_fullname}`""
 }
 elseif ("" -ne $input_fullname) {
-	$exe_command = "cat `"${input_fullname}`" | `"${exe_fullname}`""
+	$exe_command = "type `"${input_fullname}`" | `"${exe_fullname}`""
 }
 elseif ("" -ne $output_fullname) {
 	$exe_command = "`"${exe_fullname}`" > `"${output_fullname}`""
