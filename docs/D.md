@@ -1,3 +1,6 @@
+<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['\$','\$'],['\\(','\\)']],processEscapes:true},CommonHTML: {matchFontHeight:false}});</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
 # D: 一致探索
 
 $N$個の整数$A_i\ (1\le i\le N)$と$M$個の整数$B_j\ (1\le j\le M)$が与えられます．
