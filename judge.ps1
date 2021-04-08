@@ -2,7 +2,7 @@
 # @created: April 3, 2021
 
 Param(
-	[parameter(mandatory = $true)][ValidateSet("A", "B", "C", "D", "E")][String]$task
+	[parameter(mandatory = $true)][ValidateSet("A", "B", "C", "D", "E", "F", "G")][String]$task
 )
 chcp 65001 | Out-Null
 $root_dir_fullname = Split-Path $MyInvocation.MyCommand.Path

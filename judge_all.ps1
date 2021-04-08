@@ -3,7 +3,7 @@
 
 chcp 65001 | Out-Null
 
-$tasks = @("A", "B", "C", "D", "E")
+$tasks = @("A", "B", "C", "D", "E", "F", "G")
 
 $root_dir_fullname = Split-Path $MyInvocation.MyCommand.Path
 $judge_fullname = "${root_dir_fullname}\judge.ps1"
