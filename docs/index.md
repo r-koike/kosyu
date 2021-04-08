@@ -7,13 +7,13 @@
 
 | 問題 | 配点 |
 ----|---- 
-| A:合計 | 100 |
-| B:数値処理 | 200 |
-| C:二次方程式 | 300 |
-| D:一致探索 | 200 |
-| E:和の探索 | 100-300-600 |
-| F:クラス | 200 |
-| G:テンプレート | 400 |
+| [A:合計](https://r-koike.github.io/kosyu/A) | 100 |
+| [B:数値処理](https://r-koike.github.io/kosyu/B) | 200 |
+| [C:二次方程式](https://r-koike.github.io/kosyu/C) | 300 |
+| [D:一致探索](https://r-koike.github.io/kosyu/D) | 200 |
+| [E:和の探索](https://r-koike.github.io/kosyu/E) | 100-300-600 |
+| [F:クラス](https://r-koike.github.io/kosyu/F) | 200 |
+| [G:テンプレート](https://r-koike.github.io/kosyu/G) | 400 |
 
 ## 実行方法
 1. `/src/[問題番号].cpp`などの名前でファイルを作成します．`[問題番号]`は"A","B",...,"G"です．
