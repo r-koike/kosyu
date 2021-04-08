@@ -28,17 +28,18 @@ str, p:
 (0, 1)  
 *-----  
 vec, vec_str, vec_pair:  
-{0, 1, 2, 3}  
-{"hello", "world", "!"}  
-{(0, 1), (2, 3), (4, 5)}  
+\{0, 1, 2, 3}  
+\{"hello", "world", "!"}  
+\{(0, 1), (2, 3), (4, 5)}  
 *-----  
 pair_vecvec:  
-({0, 1, 2, 3}, {4, 5, 6, 7})  
+(\{0, 1, 2, 3}, \{4, 5, 6, 7})  
 *-----  
 vec_pair_vecvec:  
-{({0}, {1, 2}), ({3}, {}), ({4}, {5})}  
+\{(\{0}, \{1, 2}), (\{3}, \{}), (\{4}, \{5})}  
 *-----  
 vec_vec_vec:  
+\{\{\{0}, \{1, 2}}, \{\{3}, \{4}, \{5, 6}}, \{\{}}}
 ```
 
 ---
@@ -55,18 +56,18 @@ using namespace std;
 
 /* ↑ここを編集する． */
 
-int main() {
+int main() \{
     int i = 777;
     int x1 = 1, x2 = 2, x3 = 3, x4 = 4, x5 = 5;
     string str = "hello";
-    pair<int, int> p = {0, 1};
-    vector<int> vec = {0, 1, 2, 3};
-    vector<string> vec_str = {"hello", "world", "!"};
-    vector<pair<int, int>> vec_pair = {{0, 1}, {2, 3}, {4, 5}};
-    pair<vector<int>, vector<int>> pair_vecvec = {{0, 1, 2, 3}, {4, 5, 6, 7}};
-    vector<pair<vector<int>, vector<int>>> vec_pair_vecvec = {
-        {{0}, {1, 2}}, {{3}, {}}, {{4}, {5}}};
-    vector<vector<vector<int>>> vec_vec_vec = {{{0}, {1, 2}}, {{3}, {4}, {5, 6}}, {{}}};
+    pair<int, int> p = \{0, 1};
+    vector<int> vec = \{0, 1, 2, 3};
+    vector<string> vec_str = \{"hello", "world", "!"};
+    vector<pair<int, int>> vec_pair = \{\{0, 1}, \{2, 3}, \{4, 5}};
+    pair<vector<int>, vector<int>> pair_vecvec = \{\{0, 1, 2, 3}, \{4, 5, 6, 7}};
+    vector<pair<vector<int>, vector<int>>> vec_pair_vecvec = \{
+        \{\{0}, \{1, 2}}, \{\{3}, \{}}, \{\{4}, \{5}}};
+    vector<vector<vector<int>>> vec_vec_vec = \{\{\{0}, \{1, 2}}, \{\{3}, \{4}, \{5, 6}}, \{\{}}};
 
     disp(i);
     disp(x1, x2, x3, x4, x5);
