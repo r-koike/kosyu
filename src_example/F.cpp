@@ -1,7 +1,7 @@
 #include <cstdio>
 using namespace std;
 
-const int MAX_N = 50005000;
+const int MAX_X = 50005000;
 
 class Collatz {
   private:
