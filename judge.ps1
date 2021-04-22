@@ -48,9 +48,14 @@ else {
 		$judge = $result[0]
 		$time = $result[1]
 		if ($judge -eq "Completed") {
-			# 最後は改行があってもなくてもいいが，2個以上の改行は許されない
 			# no differences -> $? = True, otherwise -> $? = False
-			fc.exe /a $temp_output_fullname $ans_fullname | Out-Null
+			if ($task -eq "C") {
+				& "${root_dir_fullname}\util\fc_taskC.exe" $temp_output_fullname $ans_fullname | Out-Null
+			}
+			else {
+				# 最後は改行があってもなくてもいいが，2個以上の改行は許されない
+				fc.exe /a $temp_output_fullname $ans_fullname | Out-Null
+			}
 			$all_ok = $?
 
 			if ($all_ok) {
