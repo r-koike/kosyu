@@ -12,9 +12,9 @@ int main() {
 
     scanf("%d%d", &n, &m);
     for (int i = 0; i < n; i++) {
-        int aTemp;
-        scanf("%d", &aTemp);
-        a.push_back(aTemp);
+        int temp_a;
+        scanf("%d", &temp_a);
+        a.push_back(temp_a);
     }
     for (int i = 0; i < m; i++) {
         scanf("%d", &b[i]);

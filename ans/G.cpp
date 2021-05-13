@@ -11,12 +11,11 @@ template <typename A> string to_string(A v) {
     bool first = true;
     string ret = "{";
     for (const auto &x : v) {
-        string s = to_string(x);
         if (!first) {
             ret += ", ";
         }
         first = false;
-        ret += s;
+        ret += to_string(x);
     }
     ret += "}";
     return ret;

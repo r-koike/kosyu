@@ -8,9 +8,9 @@ int main() {
     vector<int> a;
     scanf("%d%d", &n, &d);
     for (int i = 0; i < n; i++) {
-        int aTemp;
-        scanf("%d", &aTemp);
-        a.push_back(aTemp);
+        int temp_a;
+        scanf("%d", &temp_a);
+        a.push_back(temp_a);
     }
 
     // まずはa[i]+a[j]の計算結果を網羅したvectorであるa2を作る

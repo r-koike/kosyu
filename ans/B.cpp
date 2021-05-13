@@ -12,7 +12,7 @@ int main() {
     }
 
     // kaijoの左から3桁を求める
-    // adが3桁よりも大きい限りは続行する
+    // double_aが3桁よりも大きい限りは続行する
     double double_a = kaijo;
     while (floor(log10(double_a) + 1) > 3) {
         double_a /= 10;

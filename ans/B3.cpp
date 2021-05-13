@@ -35,14 +35,14 @@ int main() {
 
     int ret = 0;
     int keta = 0;
-    bool zeroPadding = true;
+    bool zero_padding = true;
     for (int i = MAX_KETA - 1; i >= 0 && keta < 3; i--) {
         // 最初の方はゼロで埋まっているはず(ゼロパディング)なので，
         // 最初に0以外の数字が来るまでスルーする
-        if (zeroPadding && kaijo[n][i] == 0) {
+        if (zero_padding && kaijo[n][i] == 0) {
             continue;
         }
-        zeroPadding = false;
+        zero_padding = false;
 
         ret *= 10;
         ret += kaijo[n][i];
